@@ -45,7 +45,7 @@ const CastPage = () => {
 
       {/* Logo at top center */}
       <div className="relative z-10 flex justify-center mb-10">
-        <Link to='/'>
+        <Link to="/">
           <img
             src="src/assets/images/Logo.png"
             alt="Rick and Morty Logo"
@@ -69,11 +69,13 @@ const CastPage = () => {
                 backdropFilter: "blur(4px)",
               }}
             >
-              <img
-                src={character.image}
-                alt={character.name}
-                className="w-full h-32 md:h-60 object-cover rounded-md px-4 pt-4"
-              />
+              <Link to={`/character/${character.id}`}>
+                <img
+                  src={character.image}
+                  alt={character.name}
+                  className="w-56 h-46 object-cover rounded-t-md px-3 pt-3"
+                />
+              </Link>
               <p className="text-white text-sm font-medium px-4 py-2">
                 {character.name}
               </p>

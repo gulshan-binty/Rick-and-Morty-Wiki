@@ -59,9 +59,10 @@ const CastSection = () => {
         <h2 className="text-white text-2xl md:text-3xl font-bold">
           Meet The Cast
         </h2>
-        <Link 
-        to="/castPage"
-        className="px-4 py-1 border border-lime-400 text-white rounded hover:bg-lime-400 hover:text-black transition">
+        <Link
+          to="/castPage"
+          className="px-4 py-1 border border-lime-400 text-white rounded hover:bg-lime-400 hover:text-black transition"
+        >
           View All
         </Link>
       </div>
@@ -76,11 +77,13 @@ const CastSection = () => {
                   clipPath: "polygon(0 0, 100% 0, 100% 80%, 80% 100%, 0 100%)",
                 }}
               >
-                <img
-                  src={character.image}
-                  alt={character.name}
-                  className="w-56 h-46 object-cover rounded-t-md px-3 pt-3"
-                />
+                <Link to={`/character/${character.id}`}>
+                  <img
+                    src={character.image}
+                    alt={character.name}
+                    className="w-56 h-46 object-cover rounded-t-md px-3 pt-3"
+                  />
+                </Link>
                 <div className="p-4 text-white text-sm font-medium">
                   {character.name}
                 </div>
