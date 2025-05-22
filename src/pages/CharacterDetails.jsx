@@ -59,10 +59,9 @@ const CharacterDetails = () => {
 
   return (
     <section className="relative min-h-screen text-white bg-[#0b0f1a] overflow-hidden px-4 sm:px-10">
-
       <div className="absolute inset-0 -z-10">
         <img
-          src="src/assets/images/image 64-9.png"
+          src="public\images\image 64-11.png"
           alt="Background"
           className="w-full h-full object-cover"
         />
@@ -73,7 +72,7 @@ const CharacterDetails = () => {
       {/* Logo */}
       <Link to="/">
         <img
-          src="/src/assets/images/Logo.png"
+          src="public\images\portal.png"
           alt="Rick and Morty Logo"
           className="h-auto w-32 md:w-56 mx-auto py-3"
         />
@@ -139,7 +138,6 @@ const CharacterDetails = () => {
               />
             </div>
 
-           
             <div className="relative mt-4">
               <InfoCard
                 label="Last Known Location"

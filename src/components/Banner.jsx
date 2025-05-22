@@ -2,9 +2,8 @@ const Banner = () => {
   return (
     <div className=" w-full">
       <div className="max-w-[1220px] mx-auto relative z-10 flex flex-col items-center justify-center text-white px-4 text-center">
-
         <img
-          src="/src/assets/images/Logo.png"
+          src="public\images\Logo.png"
           alt="Rick and Morty Logo"
           className="h-auto w-32 md:w-56 py-8"
         />
@@ -12,13 +11,13 @@ const Banner = () => {
         {/* Main Heading */}
         <h1 className="relative header-text flex flex-wrap justify-center items-center text-4xl md:text-8xl font-extrabold md:gap-4 gap-0 pt-16">
           <img
-            src="/src/assets/images/bubble.png"
+            src="public\images\bubble.png"
             alt="Portal"
             className="absolute top-12 -left-8 md:left-15 md:-top-5  w-20 md:w-56"
           />
           <span className="text-white tracking-wider italic">THE</span>
           <img
-            src="/src/assets/images/portal.png"
+            src="public\images\portal.png"
             alt="Portal"
             className="w-32 md:w-60"
           />
@@ -53,8 +52,6 @@ const Banner = () => {
           </p>
         </div>
       </div>
-
-     
     </div>
   );
 };

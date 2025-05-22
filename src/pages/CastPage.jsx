@@ -31,15 +31,13 @@ const CastPage = () => {
       }, []);
   return (
     <section className="relative min-h-screen bg-[#0b0f1a] overflow-hidden py-12 px-4 sm:px-10">
-     
       <div className="absolute inset-0 z-0">
         <img
-          src="src/assets/images/image 64-9.png"
+          src="public\images\image 64-9.png"
           alt="Background"
           className="w-full h-full object-cover"
         />
 
-       
         <div className="absolute inset-0 bg-[#0b0f1a]/95" />
       </div>
 
@@ -47,7 +45,7 @@ const CastPage = () => {
       <div className="relative z-10 flex justify-center mb-10">
         <Link to="/">
           <img
-            src="src/assets/images/Logo.png"
+            src="public\images\Logo.png"
             alt="Rick and Morty Logo"
             className="h-auto w-32 md:w-56"
           />
