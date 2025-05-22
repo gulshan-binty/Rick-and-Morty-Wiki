@@ -29,7 +29,7 @@ const EpisodeSection = () => {
     const fetchEpisodes = async () => {
       try {
         const data = await request(endpoint, query);
-        setEpisodes(data.episodes.results.slice(0, 10)); // adjust number of episodes if needed
+        setEpisodes(data.episodes.results.slice(0, 10)); 
       } catch (error) {
         console.error("Error fetching episodes:", error);
       }

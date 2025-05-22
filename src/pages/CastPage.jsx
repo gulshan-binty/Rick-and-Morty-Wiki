@@ -22,7 +22,7 @@ const CastPage = () => {
         const fetchCast = async () => {
           try {
             const data = await request(endpoint, query);
-            setCast(data.characters.results.slice(0, 15)); // limit to first 1
+            setCast(data.characters.results.slice(0, 15)); 
           } catch (err) {
             console.error("Failed to fetch cast:", err);
           }
@@ -31,7 +31,7 @@ const CastPage = () => {
       }, []);
   return (
     <section className="relative min-h-screen bg-[#0b0f1a] overflow-hidden py-12 px-4 sm:px-10">
-      {/* Full background image */}
+     
       <div className="absolute inset-0 z-0">
         <img
           src="src/assets/images/image 64-9.png"
@@ -39,7 +39,7 @@ const CastPage = () => {
           className="w-full h-full object-cover"
         />
 
-        {/* Dark overlay */}
+       
         <div className="absolute inset-0 bg-[#0b0f1a]/95" />
       </div>
 

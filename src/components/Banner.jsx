@@ -1,9 +1,7 @@
-const Header = () => {
+const Banner = () => {
   return (
     <div className=" w-full">
       <div className="max-w-[1220px] mx-auto relative z-10 flex flex-col items-center justify-center text-white px-4 text-center">
-        {/* Wrapper for fixed width */}
-        {/* Floating Rick & Morty Label */}
 
         <img
           src="/src/assets/images/Logo.png"
@@ -38,7 +36,10 @@ const Header = () => {
         <div className="flex md:flex-row flex-col-reverse gap-8 md:gap-16 justify-center items-start w-[360px] md:w-[512px] mx-auto my-8">
           {/* Button */}
           <button className="font-semibold w-36 md:w-80 py-2 px-5  md:p-3 bg-gradient-to-r from-lime-400 to-cyan-400 text-white rounded-full shadow-lg flex justify-center items-center md:gap-2 hover:scale-105 transition-transform">
-            <svg className="md:w-6 md:h-6 w-3 h-3 fill-white" viewBox="0 0 24 24">
+            <svg
+              className="md:w-6 md:h-6 w-3 h-3 fill-white"
+              viewBox="0 0 24 24"
+            >
               <path d="M3 22v-20l18 10-18 10z" />
             </svg>
             Watch Now
@@ -53,16 +54,9 @@ const Header = () => {
         </div>
       </div>
 
-      {/* Right-side glowing device image */}
-      {/* <div className="absolute right-4 bottom-8 md:bottom-20 md:right-10 w-28 md:w-36">
-        <img
-          src="/src/assets/images/device.png"
-          alt="Device"
-          className="w-full h-full object-contain"
-        />
-      </div> */}
+     
     </div>
   );
 };
 
-export default Header;
+export default Banner;

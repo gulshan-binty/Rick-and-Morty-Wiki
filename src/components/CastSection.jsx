@@ -30,7 +30,7 @@ const CastSection = () => {
     const fetchCast = async () => {
       try {
         const data = await request(endpoint, query);
-        setCast(data.characters.results.slice(0, 15)); // limit to first 10
+        setCast(data.characters.results.slice(0, 15)); 
       } catch (err) {
         console.error("Failed to fetch cast:", err);
       }

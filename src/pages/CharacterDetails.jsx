@@ -59,7 +59,7 @@ const CharacterDetails = () => {
 
   return (
     <section className="relative min-h-screen text-white bg-[#0b0f1a] overflow-hidden px-4 sm:px-10">
-      {/* Full background image */}
+
       <div className="absolute inset-0 -z-10">
         <img
           src="src/assets/images/image 64-9.png"
@@ -67,7 +67,6 @@ const CharacterDetails = () => {
           className="w-full h-full object-cover"
         />
 
-        {/* Dark overlay */}
         <div className="absolute inset-0 bg-[#0b0f1a]/95" />
       </div>
 
@@ -125,7 +124,7 @@ const CharacterDetails = () => {
           </div>
 
           <div className="pb-3">
-            {/* Origin Card with external link icon */}
+            {/* Origin Card */}
             <div className="relative">
               <InfoCard
                 label="Origin"
@@ -140,7 +139,7 @@ const CharacterDetails = () => {
               />
             </div>
 
-            {/* Last Known Location Card with external link icon */}
+           
             <div className="relative mt-4">
               <InfoCard
                 label="Last Known Location"
@@ -159,7 +158,7 @@ const CharacterDetails = () => {
             </div>
           </div>
 
-          {/* Episodes with gradient border */}
+          {/* Episodes */}
           <div className="p-[1px] rounded-xl bg-gradient-to-br from-green-400 to-cyan-400">
             <div className="bg-[#0b0f1a] rounded-xl p-4 max-h-60 overflow-y-auto pr-2 scrollbar-thin scrollbar-thumb-lime-500">
               <h3 className="text-white font-semibold mb-2">
